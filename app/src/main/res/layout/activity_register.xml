@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f7f7f7"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:src="@mipmap/ic_login" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="35dp"
+        android:text="期待您加入"
+        android:textColor="@color/gray_333333"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="38dp"
+        android:background="@color/transparent_00000000"
+        android:drawableLeft="@mipmap/ic_mobile"
+        android:drawablePadding="14dp"
+        android:focusable="true"
+        android:hint="请输入您的手机号码"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="11"
+        android:nextFocusDown="@+id/et_code"
+        android:singleLine="true"
+        android:textColor="@color/gray_333333"
+        android:textColorHint="@color/gray_aba9a9"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_margin="15dp"
+        android:background="@color/gray_e9e9e9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_weight="1"
+            android:background="@color/transparent_00000000"
+            android:drawableLeft="@mipmap/ic_code"
+            android:drawablePadding="14dp"
+            android:focusable="true"
+            android:hint="请输入验证码"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="11"
+            android:nextFocusDown="@+id/et_pwd"
+            android:singleLine="true"
+            android:textColor="@color/gray_333333"
+            android:textColorHint="@color/gray_aba9a9"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_get_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="17dp"
+            android:text="获取验证码"
+            android:textColor="@color/red_fd4820"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_margin="15dp"
+        android:background="@color/gray_e9e9e9" />
+
+
+    <com.hyd.winlife.widget.EyeEditText
+        android:id="@+id/et_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/transparent_00000000"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890-_@!#;:',*.?+=%$^~`[](){}|\\/"
+        android:drawableLeft="@mipmap/ic_pwd"
+        android:drawablePadding="14dp"
+        android:hint="请输入您的密码"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:singleLine="true"
+        android:textColor="@color/gray_333333"
+        android:textColorHint="@color/gray_aba9a9"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_margin="15dp"
+        android:background="@color/gray_e9e9e9" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/selector_red_corner2"
+        android:enabled="true"
+        android:onClick="onClick"
+        android:text="注册"
+        android:textColor="@color/white_ffffff"
+        android:textSize="14sp" />
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="我已阅读并同意《赢生活会员服务协议》" />
+
+</LinearLayout>

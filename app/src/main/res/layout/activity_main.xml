@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hyd.winlife.widget.MySwipeRefreshLayou xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refreshlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f7f7f7">
+
+    <com.hyd.winlife.widget.NestScrollView
+        android:id="@+id/main_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".ui.MainActivity">
+
+            <com.hyd.winlife.widget.AutoLoopViewPager
+                android:id="@+id/autoLoopViewPager1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的华赢币(个)："
+                    android:textColor="@color/black_393939"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0.00"
+                    android:textColor="@color/red_fd4820"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btn_activate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/selector_red_corner2"
+                    android:text="查看"
+                    android:textColor="@color/white_ffffff"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="193dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white_ffffff" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_viewpager_line"
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:background="@color/white_ffffff"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/ll_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white_ffffff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="12dp"
+                    android:text="杭品优选"
+                    android:textColor="@color/gray_333333"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/gray_f7f7f7" />
+
+                <com.hyd.winlife.widget.AutoLoopViewPager
+                    android:id="@+id/autoLoopViewPager2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/gray_f7f7f7" />
+
+                <com.hyd.winlife.widget.AutoLoopViewPager
+                    android:id="@+id/autoLoopViewPager3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white_ffffff"
+                android:orientation="vertical"
+                android:paddingBottom="12dp"
+                android:paddingTop="17dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:src="@mipmap/icon_recommend" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="17dp">
+
+                <View
+                    android:layout_width="29dp"
+                    android:layout_height="0.5dp"
+                    android:layout_marginRight="7dp"
+                    android:background="@color/gray_999999" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我是有底线的"
+                    android:textColor="@color/gray_999999"
+                    android:textSize="11sp" />
+
+                <View
+                    android:layout_width="29dp"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="7dp"
+                    android:background="@color/gray_999999" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.hyd.winlife.widget.NestScrollView>
+</com.hyd.winlife.widget.MySwipeRefreshLayou>

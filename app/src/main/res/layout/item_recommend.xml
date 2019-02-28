@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_color_white_transparent"
+    android:orientation="horizontal">
+
+    <net.huayingdai.widget.circleimage.RoundImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerInside" />
+
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/tv_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/gray_333333"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="@color/gray_333333"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
